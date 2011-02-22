@@ -1,9 +1,9 @@
 #Motivational Text!
 
 ##Texting? Why
-This app was starting in lieu of me receiving a motivational text one 
-morning by [Jarod Luebbert](http://github.com/jarodl) wishing me a great
-day. So, hell...Why not all of us?
+This app was starting in lieu of me needing to receive a motivational
+text every morning by [Jarod Luebbert](http://github.com/jarodl) wishing me a great
+day. So, hell...Why not give that to everyone!
 
 ##What is this?
 This is my first jump into [MonogoDB](http://www.mongodb.org/) and a 
