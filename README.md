@@ -1,7 +1,7 @@
 #Motivational Text!
 
 ##Texting? Why
-This app was starting in leu of me receiving a motivational text one 
+This app was starting in lieu of me receiving a motivational text one 
 morning by [Jarod Luebbert](http://github.com/jarodl) wishing me a great
 day. So, hell...Why not all of us?
 
