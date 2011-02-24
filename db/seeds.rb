@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+#
+puts "EMPTY THE MONGODB DATABASE, ALSO LOL CAPS"
+Mongoid.master.collections.reject { |c| c.name =~ /^system/}.each(&:drop)
+puts "SETTING UP DEFAULT USER LOG..OK WTF CAPS"
+user = User.create! :username => 'brntbeer', :email => 'jesus@test.com', :password => 'please', :password_confirmation => 'please'
+puts 'New user created (no more caps): ' << user.username
