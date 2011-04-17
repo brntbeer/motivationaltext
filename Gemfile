@@ -8,6 +8,7 @@ gem 'devise', '1.2.rc'
 gem 'SystemTimer', '>= 1.2.0'
 gem 'delayed_job'
 gem 'delayed_job_mongoid'
+gem 'twilio'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

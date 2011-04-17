@@ -12,7 +12,14 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 module Motivationaltext
   class Application < Rails::Application
-    require "#{Rails.root.to_s}/lib/*"
+    #Require the SendTextJob so delayed_job workers know of it.
+    require "#{Rails.root.to_s}/lib/send_text_job.rb"
+    #Authenticate Twilio as we fire up any environment
+    if ENV['TWILIO_ACCOUNT_SID'] == nil ||ENV['TWILIO_AUTH_TOKEN'] == nil
+      raise "No Twilio Credentials. Please save them to ~/.bash_profile or ~/.bash_rc"
+    else
+      Twilio.connect(ENV['TWILIO_ACCOUNT_SID'], ENV['TWILIO_AUTH_TOKEN']) 
+    end
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.

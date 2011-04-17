@@ -6,8 +6,9 @@ text every morning by [Jarod Luebbert](http://github.com/jarodl) wishing me a gr
 day. So, hell...Why not give that to everyone!
 
 ##What is this?
-This is my first jump into [MonogoDB](http://www.mongodb.org/) and a 
-background job worker ([Resque maybe?](https://github.com/defunkt/resque))
+This is my first jump into [MonogoDB](http://www.mongodb.org/) and 
+[delayed jobs](https://github.com/collectiveidea/delayed_job) more specifically
+[delayed job for mongoid](https://github.com/collectiveidea/delayed_job_mongoid)
 and [Twilio](http://twilio.com) as a web app. Hopefully all goes well.
 
 ##Overview
