@@ -1,4 +1,5 @@
-#insert with your own info!
+#Change the extention on this file to remove the .example
+# and insert with your own info!
 account_sid: xxxxxxxxxxxxxxxxxxx
 auth_token: xxxxxxxxxxxxxxxxxxxx
 callerid: xxxxxxxxxxxxxxxxxxxxxx
