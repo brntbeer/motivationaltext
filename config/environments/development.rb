@@ -28,5 +28,12 @@ Motivationaltext::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+
+  #Authenticate Twilio as we fire up this environment 
+  if TWILIO_CONFIG['account_sid'] == nil || TWILIO_CONFIG['auth_token'] == nil
+    raise "No Twilio Credentials. Please modify config/twilio.yml with your credentials" 
+  else
+    Twilio.connect(TWILIO_CONFIG['account_sid'], TWILIO_CONFIG['auth_token']) 
+  end
 end
 

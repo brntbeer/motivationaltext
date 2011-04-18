@@ -9,6 +9,7 @@ gem 'SystemTimer', '>= 1.2.0'
 gem 'delayed_job'
 gem 'delayed_job_mongoid'
 gem 'twilio'
+gem 'whenever', :require => false
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

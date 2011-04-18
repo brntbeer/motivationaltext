@@ -2,6 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     SystemTimer (1.2.3)
+    aaronh-chronic (0.3.9)
     abstract (1.0.0)
     actionmailer (3.0.6)
       actionpack (= 3.0.6)
@@ -97,6 +98,9 @@ GEM
     tzinfo (0.3.26)
     warden (1.0.3)
       rack (>= 1.0.0)
+    whenever (0.6.7)
+      aaronh-chronic (>= 0.3.9)
+      activesupport (>= 2.3.4)
     will_paginate (3.0.pre2)
 
 PLATFORMS
@@ -112,3 +116,4 @@ DEPENDENCIES
   mongoid (= 2.0.0.rc.7)
   rails (= 3.0.6)
   twilio
+  whenever
