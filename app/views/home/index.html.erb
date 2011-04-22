@@ -1,4 +1,12 @@
-<h3>Home</h3>
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.username %> </p>
-<% end %>
+<div id="home">
+  <div id="welcome">
+    <div id="overview">
+    <h1>Welcome!</h1>
+    <p>Motivational Texts: Start your day off right! Start your
+    day off bright! The sun may not be shining but that shouldn't prevent
+    a standup person such as yourself to shine bright! Believe in yourself
+    and be proud. Today is the beginning of the rest of your life!</p>
+      <%= link_to 'Join in!', new_user_registration_path, :class => "submit" %> 
+    </div>
+  </div>
+</div>
