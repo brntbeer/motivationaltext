@@ -86,12 +86,13 @@ a.submit{
 	font-family:Arial,sans-serif;
 	font-size:12px;
 	font-weight:bold;
-	margin:0 0 0 370px;
 	padding:5px 10px;
+    margin-top:5px;
 	text-decoration:none;
 	text-shadow:0 1px 1px #333;
 	text-transform:uppercase;
 }
+
 input[type=submit]:hover,
 a.submit:hover {
 	background:#eee;
@@ -110,5 +111,21 @@ a.submit:focus {
 	border-color:#093c75;
 	outline:none;
 }
+.signup{
+  margin:0;
+  width:400px;
+  padding:14px;
+}
 
+.signup p{
+  padding: 5px 0;
+}
+
+.signup h2 {
+  font-size: 16px
+}
+
+input{
+  padding-top: 5px;
+}
 
