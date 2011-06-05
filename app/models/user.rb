@@ -16,8 +16,6 @@ class User
   validates_length_of :number, :is =>10
   validates_uniqueness_of :username, :email, :case_sensitive => false
   
-  before_destroy :remove_from_caller_id
-  
   attr_accessible :username, :email, :password, :password_confirmation,
                   :remember_me, :number
 
@@ -32,11 +30,14 @@ class User
     sid = Twilio::OutgoingCallerId.list("PhoneNumber=#{self.number}").first.last.first.last["OutgoingCallerId"]["Sid"] rescue nil
   end
 
-
-  private
+  def add_to_caller_id
+    code = Twilio::OutgoingCallerId.create(self.number, self.username, 15)
+    code["TwilioResponse"]["ValidationRequest"]["ValidationCode"]
+  end
 
   def remove_from_caller_id
-    Twilio::OutgoingCallerId.delete("#{self.callerid_sid}")
+    sid = callerid_sid
+    Twilio::OutgoingCallerId.delete(sid)
   end
 
 end

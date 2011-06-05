@@ -1,10 +1,10 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.6'
+gem 'rails', '3.0.7'
 gem 'jquery-rails', '>= 0.2.7'
 gem 'mongoid', '2.0.0.rc.7'
 gem 'bson_ext', '>= 1.2.4'
-gem 'devise', '1.2.rc'
+gem 'devise', '1.3.4'
 gem 'SystemTimer', '>= 1.2.0'
 gem 'delayed_job'
 gem 'delayed_job_mongoid'
